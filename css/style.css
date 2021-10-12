@@ -1,42 +1,87 @@
 * {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
 }
 
 body {
+  background-image: url("../img/purple-back.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   height: 100vh;
+  font-family: "Comic Neue", cursive;
+}
+
+.logo {
+  width: 310px;
+  height: 240px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home {
   display: flex;
-  background-color: rgba(19, 27, 63, 0.678);
+  justify-content: space-around;
+  align-items: center;
+  border: 5px solid #87eef6;
+  border-radius: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding: 0 26px;
 }
 
-.memory-game {
-  width: 600px;
-  height: 460px;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
+.home .title {
+  color: white;
+}
+.home .title h2 {
+  font-size: 40px;
+  color: #87eef6;
+}
+.home .title P {
+  font-size: 20px;
+  margin-top: 20px;
 }
 
-.memory-card {
-  width: calc(25% - 10px);
-  height: calc(33.333% - 10px);
-  margin: 5px;
-  position: relative;
-  transform: scale(1);
+.home .img-game .gaming {
+  width: 500px;
+  height: 450px;
 }
 
-.memory-card:active {
-  transform: scale(0.97);
-  transition: transform .2s;
+.games {
+  font-size: 60px;
+  color: white;
+  text-align: center;
+  margin: 25px;
 }
 
-.front-face,
-.back-face {
-  width: 100%;
-  height: 100%;
+.games h2 {
+  color: #87eef6;
+  font-size: 60px;
+  padding: 40px 0;
+}
+.games .cards .card {
+  width: 500px;
+  border: 5px solid #87eef6;
+  border-radius: 10% 10% 39% 39% / 13% 10% 83% 74%;
   padding: 20px;
+  padding-right: 27px;
+  background: #181e3e;
+}
+.games .cards .card .btn {
+  background-color: #87eef6;
+  border: none;
   border-radius: 5px;
-  position: absolute;
-  background-color: rgb(107, 132, 245);
+  padding: 10px;
+  width: 100px;
+}
+.games .cards .card p {
+  font-size: 25px;
+  font-weight: bold;
+}
+.games .cards .card img {
+  width: 400px;
+  height: 350px;
+  border-radius: 10px;
 }

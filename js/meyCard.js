@@ -74,6 +74,8 @@ buttonReset.onclick = function () {
 //END CHRONO
 
 const cards = document.querySelectorAll(".memory-card");
+const levels = document.querySelectorAll("#level option");
+console.log(levels);
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;

@@ -61,7 +61,14 @@ body {
   font-weight: bold;
   color: white;
 }
-
+@keyframes shine{
+    0%,100%{
+        box-shadow: 0px 0px 32px -12px rgba(246, 180, 0, .5);
+    }
+    50%{
+        box-shadow: 0px 0px 32px 3px rgba(246, 180, 0, .5);
+    }
+}
 button {
   font-weight: 600;
   font-size: 17px;

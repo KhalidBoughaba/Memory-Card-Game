@@ -73,9 +73,24 @@ buttonReset.onclick = function () {
 };
 //END CHRONO
 
-//START level
+//START counted
+let click_card = document.querySelectorAll(".memory-game .memory-card");
+let number = 0;
 
-//END levels
+click_card.forEach(card => {
+  card.addEventListener('click', () => {
+      number++;
+      document.getElementById("clicks").innerHTML =' ' + number;
+  })
+})
+
+//click_card.onclick = function () {
+  //number++;
+  //document.getElementById("clicks").innerHTML = number;
+//};
+
+//END counted
+
 
 const cards = document.querySelectorAll(".memory-card");
 
